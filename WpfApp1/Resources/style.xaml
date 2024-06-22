@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--#region Control´s keys-->
+    <Color x:Key="PrimaryColor">#007bff</Color>
+    <Color x:Key="SecondaryColor">#6c757d</Color>
+    <Color x:Key="SuccessColor">#28a745</Color>
+    <Color x:Key="DangerColor">#dc3545</Color>
+    <Color x:Key="WarningColor">#ffc107</Color>
+    <Color x:Key="InfoColor">#17a2b8</Color>
+    <Color x:Key="LightColor">#f8f9fa</Color>
+    <Color x:Key="DarkColor">#343a40</Color>
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource PrimaryColor}"/>
+    <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource SecondaryColor}"/>
+    <SolidColorBrush x:Key="SuccessBrush" Color="{StaticResource SuccessColor}"/>
+    <SolidColorBrush x:Key="DangerBrush" Color="{StaticResource DangerColor}"/>
+    <SolidColorBrush x:Key="WarningBrush" Color="{StaticResource WarningColor}"/>
+    <SolidColorBrush x:Key="InfoBrush" Color="{StaticResource InfoColor}"/>
+    <SolidColorBrush x:Key="LightBrush" Color="{StaticResource LightColor}"/>
+    <SolidColorBrush x:Key="DarkBrush" Color="{StaticResource DarkColor}"/>
+    <FontFamily x:Key="font-primary">Bahnschrift</FontFamily>
+    <!--#endregion-->
+    
+</ResourceDictionary>

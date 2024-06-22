@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\valle\\source\\repos\\WpfApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{218D08A5-D1D7-4F2B-8672-4FCF4CF68505}|WpfApp1\\WpfApp1.csproj|c:\\users\\valle\\source\\repos\\wpfapp1\\wpfapp1\\view\\recordsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{218D08A5-D1D7-4F2B-8672-4FCF4CF68505}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\view\\recordsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218D08A5-D1D7-4F2B-8672-4FCF4CF68505}|WpfApp1\\WpfApp1.csproj|c:\\users\\valle\\source\\repos\\wpfapp1\\wpfapp1\\viewsmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218D08A5-D1D7-4F2B-8672-4FCF4CF68505}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\viewsmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\valle\\source\\repos\\WpfApp1\\WpfApp1\\ViewsModels\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\ViewsModels\\UserViewModel.cs",
+              "ToolTip": "C:\\Users\\valle\\source\\repos\\WpfApp1\\WpfApp1\\ViewsModels\\UserViewModel.cs",
+              "RelativeToolTip": "WpfApp1\\ViewsModels\\UserViewModel.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAswDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T22:00:28.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecordsView.xaml",
+              "DocumentMoniker": "C:\\Users\\valle\\source\\repos\\WpfApp1\\WpfApp1\\View\\RecordsView.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\View\\RecordsView.xaml",
+              "ToolTip": "C:\\Users\\valle\\source\\repos\\WpfApp1\\WpfApp1\\View\\RecordsView.xaml",
+              "RelativeToolTip": "WpfApp1\\View\\RecordsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-21T21:56:52.736Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

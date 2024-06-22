@@ -1,0 +1,109 @@
+﻿<UserControl x:Class="WpfApp1.View.RecordsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewmodels="clr-namespace:WpfApp1.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <viewmodels:UserViewModel x:Key="userViewModel"/>
+    </UserControl.Resources>
+
+    <Grid DataContext="{Binding Source={StaticResource userViewModel}}">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" 
+                   Grid.Column="0" 
+                   HorizontalAlignment="Center" 
+                   Margin="0 10" 
+                   Text="User Information" 
+                   FontFamily="Bahnschrift" 
+                   FontSize="17" 
+                   FontWeight="Bold" />
+
+        <Border Grid.Column="0" 
+                Grid.Row="1" 
+                BorderBrush="#0d0d0d" 
+                Background="#fdfdfd" 
+                BorderThickness="1" 
+                Width="360" 
+                Padding="10" 
+                HorizontalAlignment="Center">
+            <StackPanel Orientation="Vertical">
+                <Label Content="Name:" />
+                <TextBox Margin="5 0" 
+                         Width="300" 
+                         HorizontalAlignment="Left" 
+                         Text="{Binding User.Name, Mode=TwoWay}" />
+
+                <Label Content="Surnames:" />
+                <TextBox Margin="5 0" 
+                         Width="300" 
+                         HorizontalAlignment="Left" 
+                         Text="{Binding User.Surnames, Mode=TwoWay}" />
+
+                <Label Content="Email:" />
+                <TextBox Margin="5 0" 
+                         Width="300" 
+                         HorizontalAlignment="Left" 
+                         Text="{Binding User.Email, Mode=TwoWay}" />
+
+                <Label Content="Password:" />
+                <TextBox Margin="5 0" 
+                         Width="300" 
+                         HorizontalAlignment="Left" 
+                         Text="{Binding User.Password, Mode=TwoWay}" />
+
+                <WrapPanel Margin="0 0 0 10">
+                    <Button Content="Add" 
+                            Margin="10 0 0 10"
+                            Padding="10 3"
+                            Background="{StaticResource PrimaryBrush}"
+                            Foreground="{StaticResource SuccessBrush}"
+                            BorderThickness="0"
+                            Command="{Binding AddCommand}"/>
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+
+        <ListView Grid.Row="2"
+                  ItemsSource="{Binding Users}" 
+                  Name="lstUsers">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Surnames">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Surnames}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Email">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Email}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>
