@@ -49,5 +49,5 @@ El proyecto sigue el patrón **MVVM**, separando las responsabilidades en:
 
 La contraseña se maneja como texto por simplicidad en el proyecto; se recomienda aplicar cifrado en entornos reales.
 
-## Autor 
+## ©️ Autor 
 Realizado por Ricardo Vallejo Sánchez
